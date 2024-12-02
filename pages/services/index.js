@@ -36,15 +36,15 @@ const Services = () => {
 
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {servicesData.map((service, index) => (
+          {servicesData.map((service, serviceIndex) => (
             <div
-              key={index}
+              key={serviceIndex} {/* Add key for the service item */}
               className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300"
             >
               {/* Icons */}
               <div className="flex gap-4 text-4xl text-accent mb-4">
                 {service.icons.map((icon, iconIndex) => (
-                  <div key={iconIndex}>{icon}</div>
+                  <div key={iconIndex}>{icon}</div> {/* Add key for each icon */ }
                 ))}
               </div>
 
