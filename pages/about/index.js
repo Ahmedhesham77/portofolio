@@ -34,27 +34,27 @@ const aboutData = [
       {
         title: 'Front-End Development',
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
-          <FaBootstrap />,
-          <SiTailwindcss />,
-          <SiThreedotjs />
+          <FaHtml5 key="first1" />,
+          <FaCss3 key="first2" />,
+          <FaJs key="first3" />,
+          <FaReact key="first4" />,
+          <SiNextdotjs key="first5" />,
+          <SiFramer key="first6" />,
+          <FaWordpress key="first7" />,
+          <FaBootstrap key="first8" />,
+          <SiTailwindcss key="first9" />,
+          <SiThreedotjs key="first0" />
 
         ],
       },
       {
         title: 'Back-End Development',
-        icons: [<FaNodeJs />, <SiMongodb />,
-        <SiExpress />,],
+        icons: [<FaNodeJs key="first11" />, <SiMongodb key="first22" />,
+        <SiExpress key="first33" />,],
       },
       {
         title: "IOT",
-        icons: [<SiArduino />, <SiRaspberrypi />]
+        icons: [<SiArduino key="first111" />, <SiRaspberrypi key="first222" />]
       }
     ],
   },

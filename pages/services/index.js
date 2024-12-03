@@ -6,19 +6,19 @@ const servicesData = [
     title: "Front-End Development",
     description:
       "Crafting modern and responsive web interfaces using React.js, Bootstrap, and Tailwind CSS. I focus on delivering seamless user experiences with visually appealing designs.",
-    icons: [<FaReact />, <FaBootstrap />, <SiTailwindcss />],
+    icons: [<FaReact key="first" />, <FaBootstrap key="second" />, <SiTailwindcss key="third" />],
   },
   {
     title: "Back-End Development",
     description:
       "Building robust and secure server-side applications with Node.js and Express.js, integrated with MongoDB for efficient data management and high performance.",
-    icons: [<FaNodeJs />, <SiExpress />, <SiMongodb />],
+    icons: [<FaNodeJs key="first1" />, <SiExpress key="first2" />, <SiMongodb key="first3" />],
   },
   {
     title: "WordPress Development",
     description:
       "Developing custom WordPress websites, including theme design and plugin customization, to create websites tailored to clients' unique needs.",
-    icons: [<FaWordpress />],
+    icons: [<FaWordpress key="first4" />],
   },
 ];
 
@@ -36,15 +36,15 @@ const Services = () => {
 
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {servicesData.map((service, serviceIndex) => (
+          {servicesData.map((service, index) => (
             <div
-              key={serviceIndex} {/* Add key for the service item */}
+              key={index}
               className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300"
             >
               {/* Icons */}
               <div className="flex gap-4 text-4xl text-accent mb-4">
                 {service.icons.map((icon, iconIndex) => (
-                  <div key={iconIndex}>{icon}</div> {/* Add key for each icon */ }
+                  <div key={iconIndex}>{icon}</div>
                 ))}
               </div>
 
